@@ -1,9 +1,8 @@
-@php
-    use Illuminate\Support\Str;
-@endphp
-
 <nav class="w-100 d-flex p-2 align-items-center bg-white shadow">
-    <img src="https://picsum.photos/200" alt="" width="50" height="50">
+    <div class="d-flex gap-4 align-items-center">
+        <img src="https://picsum.photos/200" alt="" width="50" height="50">
+        <b class="fs-3">EduFun</b>
+    </div>
     <div class="d-flex gap-4 w-100 justify-content-end align-items-center pe-4">
         <div>
             <a href="{{ route('home') }}" 
@@ -12,7 +11,6 @@
             </a>
         </div>
         
-        <!-- Dropdown for Category -->
         <div class="dropdown">
             <a href="#" 
                id="dropdownMenuButton"

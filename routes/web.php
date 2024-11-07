@@ -12,5 +12,5 @@ Route::get('/about', [PagesController::class, 'about'])->name('about');
 Route::get('/category/{categories}', [PagesController::class, 'category'])->name('category');
 Route::get('/writers', [PagesController::class, 'writers'])->name('writers');
 Route::get('/writers/{user}', [UserController::class, 'show'])->name('writers.articles');
-Route::get('/contact', [PagesController::class, 'popular'])->name('popular');
+Route::get('/popular', [PagesController::class, 'popular'])->name('popular');
 Route::get('/articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
